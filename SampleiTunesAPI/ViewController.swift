@@ -7,13 +7,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var musicListTableView: UITableView!
+    
+    private let musicListCell = "musicListTableViewCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        searchBar.placeholder = "検索"
+        searchBar.delegate = self
+        
+        musicListTableView.delegate = self
+        musicListTableView.dataSource = self
+        musicListTableView.register(UINib(nibName: "MusicListTableViewCell", bundle: nil), forCellReuseIdentifier: "musicListTableViewCell")
     }
-
-
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = musicListTableView.dequeueReusableCell(withIdentifier: "musicListTableViewCell") as! MusicListTableViewCell
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 1
+    }
+}
+
+extension ViewController: UISearchBarDelegate {
+    
+}

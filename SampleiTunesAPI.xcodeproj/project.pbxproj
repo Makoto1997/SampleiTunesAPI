@@ -13,6 +13,8 @@
 		0E9ED4EC265933FA00E22974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EA265933FA00E22974 /* Main.storyboard */; };
 		0E9ED4EE265933FC00E22974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4ED265933FC00E22974 /* Assets.xcassets */; };
 		0E9ED4F1265933FC00E22974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EF265933FC00E22974 /* LaunchScreen.storyboard */; };
+		0E9ED4FA265A89B700E22974 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */; };
+		0E9ED4FB265A89B700E22974 /* MusicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0E9ED4ED265933FC00E22974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E9ED4F0265933FC00E22974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E9ED4F2265933FC00E22974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
+		0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */,
 				0E9ED4E8265933FA00E22974 /* ViewController.swift */,
 				0E9ED4EA265933FA00E22974 /* Main.storyboard */,
+				0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */,
+				0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */,
 				0E9ED4ED265933FC00E22974 /* Assets.xcassets */,
 				0E9ED4EF265933FC00E22974 /* LaunchScreen.storyboard */,
 				0E9ED4F2265933FC00E22974 /* Info.plist */,
@@ -127,6 +133,7 @@
 				0E9ED4F1265933FC00E22974 /* LaunchScreen.storyboard in Resources */,
 				0E9ED4EE265933FC00E22974 /* Assets.xcassets in Resources */,
 				0E9ED4EC265933FA00E22974 /* Main.storyboard in Resources */,
+				0E9ED4FB265A89B700E22974 /* MusicListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 				0E9ED4E9265933FA00E22974 /* ViewController.swift in Sources */,
 				0E9ED4E5265933FA00E22974 /* AppDelegate.swift in Sources */,
 				0E9ED4E7265933FA00E22974 /* SceneDelegate.swift in Sources */,
+				0E9ED4FA265A89B700E22974 /* MusicListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
