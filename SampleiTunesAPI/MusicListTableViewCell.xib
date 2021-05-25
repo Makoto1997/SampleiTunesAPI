@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MusicListTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicListTableViewCell" rowHeight="100" id="KGk-i7-Jjw" customClass="MusicListTableViewCell" customModule="SampleiTunesAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FOf-fT-i6f">
+                        <rect key="frame" x="10" y="10" width="279" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tLQ-Cb-lbF">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tLQ-Cb-lbF" secondAttribute="height" multiplier="1:1" id="4F2-dd-xK7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gWM-0b-EOp">
+                                <rect key="frame" x="85" y="0.0" width="149" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楽曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-H1-aaV">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-1h-YHt">
+                                        <rect key="frame" x="0.0" y="40" width="149" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiY-zn-Dgm">
+                                <rect key="frame" x="239" y="0.0" width="40" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="0lx-SX-fIv"/>
+                                    <constraint firstAttribute="height" constant="80" id="Y2m-Sd-e6p"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="checkmark.rectangle.portrait" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-WG-yUh">
+                        <rect key="frame" x="10" y="10" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="CMe-AD-h05"/>
+                            <constraint firstAttribute="width" constant="80" id="vJc-FT-hCI"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="play.fill" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="FOf-fT-i6f" secondAttribute="trailing" constant="10" id="Hja-B9-NXH"/>
+                    <constraint firstItem="P6b-WG-yUh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NjM-V5-2Be"/>
+                    <constraint firstItem="FOf-fT-i6f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RCk-cV-GJv"/>
+                    <constraint firstItem="P6b-WG-yUh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="RSz-rS-5wO"/>
+                    <constraint firstItem="FOf-fT-i6f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Zvv-Rg-sUG"/>
+                    <constraint firstAttribute="bottom" secondItem="FOf-fT-i6f" secondAttribute="bottom" constant="10" id="fQe-za-GU5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="artWorkImageView" destination="tLQ-Cb-lbF" id="FR4-Fs-qFK"/>
+                <outlet property="artistNameLabel" destination="qsH-1h-YHt" id="jcb-KM-ggO"/>
+                <outlet property="decisionButton" destination="CiY-zn-Dgm" id="F43-wb-4CX"/>
+                <outlet property="musicNameLabel" destination="hTJ-H1-aaV" id="aFJ-VS-Af5"/>
+                <outlet property="previewButton" destination="P6b-WG-yUh" id="e7n-1n-BzI"/>
+            </connections>
+            <point key="canvasLocation" x="142.75362318840581" y="-60.267857142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.rectangle.portrait" catalog="system" width="115" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+    </resources>
+</document>

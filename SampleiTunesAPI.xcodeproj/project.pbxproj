@@ -3,19 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E12396A265D1BF500D05705 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E123969265D1BF500D05705 /* Music.swift */; };
+		0E12396D265D347900D05705 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0E12396C265D347900D05705 /* SwiftyJSON */; };
+		0E123970265D34AC00D05705 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E12396F265D34AC00D05705 /* Alamofire */; };
 		0E9ED4E5265933FA00E22974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E4265933FA00E22974 /* AppDelegate.swift */; };
 		0E9ED4E7265933FA00E22974 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */; };
 		0E9ED4E9265933FA00E22974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E8265933FA00E22974 /* ViewController.swift */; };
 		0E9ED4EC265933FA00E22974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EA265933FA00E22974 /* Main.storyboard */; };
 		0E9ED4EE265933FC00E22974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4ED265933FC00E22974 /* Assets.xcassets */; };
 		0E9ED4F1265933FC00E22974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EF265933FC00E22974 /* LaunchScreen.storyboard */; };
+		0E9ED4FA265A89B700E22974 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */; };
+		0E9ED4FB265A89B700E22974 /* MusicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */; };
+		0E9ED4FE265D113100E22974 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E9ED4FD265D113100E22974 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E123969265D1BF500D05705 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		0E9ED4E1265933FA00E22974 /* SampleiTunesAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleiTunesAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E9ED4E4265933FA00E22974 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,8 @@
 		0E9ED4ED265933FC00E22974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E9ED4F0265933FC00E22974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E9ED4F2265933FC00E22974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListTableViewCell.swift; sourceTree = "<group>"; };
+		0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E123970265D34AC00D05705 /* Alamofire in Frameworks */,
+				0E12396D265D347900D05705 /* SwiftyJSON in Frameworks */,
+				0E9ED4FE265D113100E22974 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +70,11 @@
 			children = (
 				0E9ED4E4265933FA00E22974 /* AppDelegate.swift */,
 				0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */,
+				0E123969265D1BF500D05705 /* Music.swift */,
 				0E9ED4E8265933FA00E22974 /* ViewController.swift */,
 				0E9ED4EA265933FA00E22974 /* Main.storyboard */,
+				0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */,
+				0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */,
 				0E9ED4ED265933FC00E22974 /* Assets.xcassets */,
 				0E9ED4EF265933FC00E22974 /* LaunchScreen.storyboard */,
 				0E9ED4F2265933FC00E22974 /* Info.plist */,
@@ -83,6 +98,11 @@
 			dependencies = (
 			);
 			name = SampleiTunesAPI;
+			packageProductDependencies = (
+				0E9ED4FD265D113100E22974 /* SDWebImage */,
+				0E12396C265D347900D05705 /* SwiftyJSON */,
+				0E12396F265D34AC00D05705 /* Alamofire */,
+			);
 			productName = SampleiTunesAPI;
 			productReference = 0E9ED4E1265933FA00E22974 /* SampleiTunesAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +130,11 @@
 				Base,
 			);
 			mainGroup = 0E9ED4D8265933FA00E22974;
+			packageReferences = (
+				0E9ED4FC265D113100E22974 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				0E12396B265D347900D05705 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0E12396E265D34AC00D05705 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0E9ED4E2265933FA00E22974 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +152,7 @@
 				0E9ED4F1265933FC00E22974 /* LaunchScreen.storyboard in Resources */,
 				0E9ED4EE265933FC00E22974 /* Assets.xcassets in Resources */,
 				0E9ED4EC265933FA00E22974 /* Main.storyboard in Resources */,
+				0E9ED4FB265A89B700E22974 /* MusicListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +165,9 @@
 			files = (
 				0E9ED4E9265933FA00E22974 /* ViewController.swift in Sources */,
 				0E9ED4E5265933FA00E22974 /* AppDelegate.swift in Sources */,
+				0E12396A265D1BF500D05705 /* Music.swift in Sources */,
 				0E9ED4E7265933FA00E22974 /* SceneDelegate.swift in Sources */,
+				0E9ED4FA265A89B700E22974 /* MusicListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +369,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E12396B265D347900D05705 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		0E12396E265D34AC00D05705 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		0E9ED4FC265D113100E22974 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E12396C265D347900D05705 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E12396B265D347900D05705 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		0E12396F265D34AC00D05705 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E12396E265D34AC00D05705 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0E9ED4FD265D113100E22974 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E9ED4FC265D113100E22974 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E9ED4D9265933FA00E22974 /* Project object */;
 }
