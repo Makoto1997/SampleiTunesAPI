@@ -7,7 +7,6 @@
 
 import UIKit
 import AVFoundation
-<<<<<<< HEAD
 
 final class ViewController: UIViewController {
 
@@ -44,19 +43,6 @@ final class ViewController: UIViewController {
     private var musics: [Response.Music] = []
     private var player: AVAudioPlayer?
     private var index: Int?
-=======
-import SDWebImage
-
-final class ViewController: UIViewController {
-    
-    @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var musicListTableView: UITableView!
-    
-    private let musicListCell = "musicListTableViewCell"
-    var player: AVAudioPlayer?
-    var videoPath =  String()
-    var musicModel = Music()
->>>>>>> main
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,7 +79,6 @@ final class ViewController: UIViewController {
     
     private func reloadData() {
         
-<<<<<<< HEAD
         if searchBar.text?.isEmpty != nil {
             
             self.indicator.isHidden = false
@@ -110,13 +95,6 @@ final class ViewController: UIViewController {
                 self?.musicListTableView.reloadData()
             })
         }
-=======
-        musicModel.musicDelegate = self
-        
-        musicListTableView.delegate = self
-        musicListTableView.dataSource = self
-        musicListTableView.register(UINib(nibName: "MusicListTableViewCell", bundle: nil), forCellReuseIdentifier: "musicListTableViewCell")
->>>>>>> main
     }
     
     private func preview(url: URL) {
@@ -132,51 +110,6 @@ final class ViewController: UIViewController {
             print(error.debugDescription)
         }
     }
-    
-    @objc func tapPreviewButton(_ sender: UIButton) {
-        
-        //音楽が流れていたら止める。
-        if player?.isPlaying == true {
-            
-            player?.stop()
-        }
-        
-        let url = URL(string: musicModel.previewUrlArray[sender.tag])
-        downLoadMusicURL(url: url!)
-    }
-    
-    private func downLoadMusicURL(url: URL) {
-        
-        var downLoadTask: URLSessionDownloadTask
-        downLoadTask = URLSession.shared.downloadTask(with: url, completionHandler: { (url, res, err) in
-            print(res as Any)
-            self.preview(url: url!)
-        })
-        
-        downLoadTask.resume()
-    }
-    
-    private func reloadData() {
-        
-        if searchBar.text?.isEmpty != nil {
-            
-            let urlSting = "https://itunes.apple.com/search?term=\(String(describing:searchBar.text!))&entity=song&country=jp"
-            
-            let encodeUrlString: String = urlSting.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-            musicModel.setData(resultCount: 50, encodeUrlString: encodeUrlString)
-        }
-    }
-}
-
-extension ViewController: MusicModel {
-    
-    func catchData(count: Int) {
-        if count == 1 {
-            
-            musicListTableView.reloadData()
-        }
-    }
-}
 
 extension ViewController: MusicProtocol {
     
@@ -188,23 +121,8 @@ extension ViewController: MusicProtocol {
             player?.stop()
         }
         
-<<<<<<< HEAD
         downLoadMusicURL(url: url)
         self.index = index
-=======
-        let artWorkImageView = cell.contentView.viewWithTag(1) as! UIImageView
-        let musicNameLabel = cell.contentView.viewWithTag(2) as! UILabel
-        let artistNameLabel = cell.contentView.viewWithTag(3) as! UILabel
-        
-        artWorkImageView.sd_setImage(with: URL(string: musicModel.artworkUrl100Array[indexPath.row]), completed: nil)
-        musicNameLabel.text = musicModel.trackCensoredNameArray[indexPath.row]
-        artistNameLabel.text = musicModel.artistNameArray[indexPath.row]
-        
-        cell.previewButton.addTarget(self, action: #selector(tapPreviewButton), for: .touchUpInside)
-        cell.previewButton.tag = indexPath.row
-        
-        return cell
->>>>>>> main
     }
     
     func stopMusic() {
@@ -217,43 +135,24 @@ extension ViewController: AVAudioPlayerDelegate {
     
     func audioPlayerDidFinishPlaying(_: AVAudioPlayer, successfully flag: Bool) {
         
-<<<<<<< HEAD
         guard let index = index else { return }
         guard let cell = musicListTableView.cellForRow(at: IndexPath(row: index, section: 0)) as? MusicListCell else { return }
         cell.previewButton.setImage(UIImage(named: "play"), for: UIControl.State())
-=======
-        return musicModel.artistNameArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        tableView.deselectRow(at: indexPath, animated: true)
->>>>>>> main
     }
 }
 
 extension ViewController: UISearchBarDelegate {
-<<<<<<< HEAD
     // 検索を始めた時のメソッド
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         // キャンセルボタンを有効にする
         searchBar.showsCancelButton = true
     }
     // キャンセルボタンが押された時のメソッド
-=======
-    //    検索を始めた時のメソッド
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        //        キャンセルボタンを有効にする
-        searchBar.showsCancelButton = true
-    }
-    //     キャンセルボタンが押された時のメソッド
->>>>>>> main
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         
         searchBar.showsCancelButton = false
         searchBar.resignFirstResponder()
     }
-<<<<<<< HEAD
     // 検索ボタンを押した時のメソッド
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
@@ -293,13 +192,4 @@ extension ViewController: UITableViewDelegate {
         
         return false
     }
-=======
-    //    検索ボタンを押した時のメソッド
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        searchBar.resignFirstResponder()
-        searchBar.showsCancelButton = false
-        reloadData()
-    }
->>>>>>> main
 }
