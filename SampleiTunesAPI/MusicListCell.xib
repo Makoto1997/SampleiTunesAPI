@@ -29,44 +29,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gWM-0b-EOp">
                                 <rect key="frame" x="85" y="0.0" width="194" height="80"/>
                                 <subviews>
-<<<<<<< HEAD:SampleiTunesAPI/MusicListCell.xib
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楽曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-H1-aaV">
                                         <rect key="frame" x="0.0" y="0.0" width="194" height="40"/>
-=======
-                                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楽曲名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTJ-H1-aaV">
-                                        <rect key="frame" x="0.0" y="0.0" width="149" height="40"/>
->>>>>>> main:SampleiTunesAPI/MusicListTableViewCell.xib
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-<<<<<<< HEAD:SampleiTunesAPI/MusicListCell.xib
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-1h-YHt">
                                         <rect key="frame" x="0.0" y="40" width="194" height="40"/>
-=======
-                                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アーティスト名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsH-1h-YHt">
-                                        <rect key="frame" x="0.0" y="40" width="149" height="40"/>
->>>>>>> main:SampleiTunesAPI/MusicListTableViewCell.xib
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-<<<<<<< HEAD:SampleiTunesAPI/MusicListCell.xib
-=======
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CiY-zn-Dgm">
-                                <rect key="frame" x="239" y="0.0" width="40" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="0lx-SX-fIv"/>
-                                    <constraint firstAttribute="height" constant="80" id="Y2m-Sd-e6p"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="checkmark.rectangle.portrait" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="medium"/>
-                                </state>
-                            </button>
->>>>>>> main:SampleiTunesAPI/MusicListTableViewCell.xib
                         </subviews>
                     </stackView>
                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-WG-yUh">

@@ -8,27 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		0E12396A265D1BF500D05705 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E123969265D1BF500D05705 /* Music.swift */; };
-		0E12396D265D347900D05705 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0E12396C265D347900D05705 /* SwiftyJSON */; };
-		0E123970265D34AC00D05705 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E12396F265D34AC00D05705 /* Alamofire */; };
 		0E9ED4E5265933FA00E22974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E4265933FA00E22974 /* AppDelegate.swift */; };
 		0E9ED4E7265933FA00E22974 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */; };
 		0E9ED4E9265933FA00E22974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E8265933FA00E22974 /* ViewController.swift */; };
 		0E9ED4EC265933FA00E22974 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EA265933FA00E22974 /* Main.storyboard */; };
 		0E9ED4EE265933FC00E22974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4ED265933FC00E22974 /* Assets.xcassets */; };
 		0E9ED4F1265933FC00E22974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EF265933FC00E22974 /* LaunchScreen.storyboard */; };
-<<<<<<< HEAD
 		0E9ED4FA265A89B700E22974 /* MusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F8265A89B700E22974 /* MusicListCell.swift */; };
 		0E9ED4FB265A89B700E22974 /* MusicListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F9265A89B700E22974 /* MusicListCell.xib */; };
-		0EDDA92227E779790095F090 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EDDA92127E779790095F090 /* IQKeyboardManagerSwift */; };
 		0EF30B3327E7706500B27F77 /* ITunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF30B3227E7706500B27F77 /* ITunesAPI.swift */; };
 		0EF30B3527E770A700B27F77 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF30B3427E770A700B27F77 /* Music.swift */; };
-		0EF30B3827E778C100B27F77 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0EF30B3727E778C100B27F77 /* Kingfisher */; };
-		0EF30B3B27E7791100B27F77 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0EF30B3A27E7791100B27F77 /* Alamofire */; };
-=======
-		0E9ED4FA265A89B700E22974 /* MusicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F8265A89B700E22974 /* MusicListTableViewCell.swift */; };
-		0E9ED4FB265A89B700E22974 /* MusicListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F9265A89B700E22974 /* MusicListTableViewCell.xib */; };
-		0E9ED4FE265D113100E22974 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E9ED4FD265D113100E22974 /* SDWebImage */; };
->>>>>>> main
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,15 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				0EF30B3827E778C100B27F77 /* Kingfisher in Frameworks */,
-				0EF30B3B27E7791100B27F77 /* Alamofire in Frameworks */,
-				0EDDA92227E779790095F090 /* IQKeyboardManagerSwift in Frameworks */,
-=======
-				0E123970265D34AC00D05705 /* Alamofire in Frameworks */,
-				0E12396D265D347900D05705 /* SwiftyJSON in Frameworks */,
-				0E9ED4FE265D113100E22974 /* SDWebImage in Frameworks */,
->>>>>>> main
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +52,7 @@
 			children = (
 				0E9ED4E3265933FA00E22974 /* SampleiTunesAPI */,
 				0E9ED4E2265933FA00E22974 /* Products */,
+				0EDDA92327E845C30095F090 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,12 +69,8 @@
 			children = (
 				0E9ED4E4265933FA00E22974 /* AppDelegate.swift */,
 				0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */,
-<<<<<<< HEAD
 				0EF30B3227E7706500B27F77 /* ITunesAPI.swift */,
 				0EF30B3427E770A700B27F77 /* Music.swift */,
-=======
-				0E123969265D1BF500D05705 /* Music.swift */,
->>>>>>> main
 				0E9ED4E8265933FA00E22974 /* ViewController.swift */,
 				0E9ED4EA265933FA00E22974 /* Main.storyboard */,
 				0E9ED4F8265A89B700E22974 /* MusicListCell.swift */,
@@ -103,6 +80,14 @@
 				0E9ED4F2265933FC00E22974 /* Info.plist */,
 			);
 			path = SampleiTunesAPI;
+			sourceTree = "<group>";
+		};
+		0EDDA92327E845C30095F090 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				0E123969265D1BF500D05705 /* Music.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,15 +107,6 @@
 			);
 			name = SampleiTunesAPI;
 			packageProductDependencies = (
-<<<<<<< HEAD
-				0EF30B3727E778C100B27F77 /* Kingfisher */,
-				0EF30B3A27E7791100B27F77 /* Alamofire */,
-				0EDDA92127E779790095F090 /* IQKeyboardManagerSwift */,
-=======
-				0E9ED4FD265D113100E22974 /* SDWebImage */,
-				0E12396C265D347900D05705 /* SwiftyJSON */,
-				0E12396F265D34AC00D05705 /* Alamofire */,
->>>>>>> main
 			);
 			productName = SampleiTunesAPI;
 			productReference = 0E9ED4E1265933FA00E22974 /* SampleiTunesAPI.app */;
@@ -160,15 +136,9 @@
 			);
 			mainGroup = 0E9ED4D8265933FA00E22974;
 			packageReferences = (
-<<<<<<< HEAD
-				0EF30B3627E778C100B27F77 /* XCRemoteSwiftPackageReference "Kingfisher" */,
-				0EF30B3927E7791100B27F77 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0EDDA92027E779790095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-=======
-				0E9ED4FC265D113100E22974 /* XCRemoteSwiftPackageReference "SDWebImage" */,
-				0E12396B265D347900D05705 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
-				0E12396E265D34AC00D05705 /* XCRemoteSwiftPackageReference "Alamofire" */,
->>>>>>> main
+				0EDDA92427E848A30095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				0E79693827E84964005D655E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0E79693927E84988005D655E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0E9ED4E2265933FA00E22974 /* Products */;
 			projectDirPath = "";
@@ -354,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DP64W5P5DK;
 				INFOPLIST_FILE = SampleiTunesAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mkt1997.SampleiTunesAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -373,6 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DP64W5P5DK;
 				INFOPLIST_FILE = SampleiTunesAPI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mkt1997.SampleiTunesAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -408,16 +380,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-<<<<<<< HEAD
-		0EDDA92027E779790095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		0E79693827E84964005D655E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.5.0;
+				minimumVersion = 5.5.0;
 			};
 		};
-		0EF30B3627E778C100B27F77 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		0E79693927E84988005D655E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -425,74 +396,15 @@
 				minimumVersion = 7.2.0;
 			};
 		};
-		0EF30B3927E7791100B27F77 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		0EDDA92427E848A30095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.5.0;
-=======
-		0E12396B265D347900D05705 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-		0E12396E265D34AC00D05705 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.4.3;
-			};
-		};
-		0E9ED4FC265D113100E22974 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.11.1;
->>>>>>> main
+				minimumVersion = 6.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-<<<<<<< HEAD
-		0EDDA92127E779790095F090 /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0EDDA92027E779790095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-		0EF30B3727E778C100B27F77 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0EF30B3627E778C100B27F77 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-		0EF30B3A27E7791100B27F77 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0EF30B3927E7791100B27F77 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-=======
-		0E12396C265D347900D05705 /* SwiftyJSON */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E12396B265D347900D05705 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
-			productName = SwiftyJSON;
-		};
-		0E12396F265D34AC00D05705 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E12396E265D34AC00D05705 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		0E9ED4FD265D113100E22974 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E9ED4FC265D113100E22974 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
->>>>>>> main
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E9ED4D9265933FA00E22974 /* Project object */;
 }
