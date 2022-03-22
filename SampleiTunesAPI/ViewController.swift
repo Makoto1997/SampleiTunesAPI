@@ -9,7 +9,7 @@ import UIKit
 import AVFoundation
 
 final class ViewController: UIViewController {
-
+    
     @IBOutlet weak private var searchBar: UISearchBar! {
         didSet {
             searchBar.delegate = self
@@ -110,6 +110,7 @@ final class ViewController: UIViewController {
             print(error.debugDescription)
         }
     }
+}
 
 extension ViewController: MusicProtocol {
     
