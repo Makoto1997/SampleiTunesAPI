@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E12396A265D1BF500D05705 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E123969265D1BF500D05705 /* Music.swift */; };
 		0E9ED4E5265933FA00E22974 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E4265933FA00E22974 /* AppDelegate.swift */; };
 		0E9ED4E7265933FA00E22974 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E6265933FA00E22974 /* SceneDelegate.swift */; };
 		0E9ED4E9265933FA00E22974 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4E8265933FA00E22974 /* ViewController.swift */; };
@@ -16,6 +15,9 @@
 		0E9ED4F1265933FC00E22974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4EF265933FC00E22974 /* LaunchScreen.storyboard */; };
 		0E9ED4FA265A89B700E22974 /* MusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F8265A89B700E22974 /* MusicListCell.swift */; };
 		0E9ED4FB265A89B700E22974 /* MusicListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9ED4F9265A89B700E22974 /* MusicListCell.xib */; };
+		0EA42C0A27E9985300C6786B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0EA42C0927E9985300C6786B /* Kingfisher */; };
+		0EA42C0D27E998A000C6786B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0EA42C0C27E998A000C6786B /* Alamofire */; };
+		0EA42C1027E998DD00C6786B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0EA42C0F27E998DD00C6786B /* IQKeyboardManagerSwift */; };
 		0EF30B3327E7706500B27F77 /* ITunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF30B3227E7706500B27F77 /* ITunesAPI.swift */; };
 		0EF30B3527E770A700B27F77 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF30B3427E770A700B27F77 /* Music.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA42C0A27E9985300C6786B /* Kingfisher in Frameworks */,
+				0EA42C0D27E998A000C6786B /* Alamofire in Frameworks */,
+				0EA42C1027E998DD00C6786B /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,9 @@
 			);
 			name = SampleiTunesAPI;
 			packageProductDependencies = (
+				0EA42C0927E9985300C6786B /* Kingfisher */,
+				0EA42C0C27E998A000C6786B /* Alamofire */,
+				0EA42C0F27E998DD00C6786B /* IQKeyboardManagerSwift */,
 			);
 			productName = SampleiTunesAPI;
 			productReference = 0E9ED4E1265933FA00E22974 /* SampleiTunesAPI.app */;
@@ -136,9 +144,9 @@
 			);
 			mainGroup = 0E9ED4D8265933FA00E22974;
 			packageReferences = (
-				0EDDA92427E848A30095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				0E79693827E84964005D655E /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0E79693927E84988005D655E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0EA42C0827E9985300C6786B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				0EA42C0B27E998A000C6786B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0EA42C0E27E998DD00C6786B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 0E9ED4E2265933FA00E22974 /* Products */;
 			projectDirPath = "";
@@ -170,7 +178,6 @@
 			files = (
 				0E9ED4E9265933FA00E22974 /* ViewController.swift in Sources */,
 				0E9ED4E5265933FA00E22974 /* AppDelegate.swift in Sources */,
-				0E12396A265D1BF500D05705 /* Music.swift in Sources */,
 				0E9ED4E7265933FA00E22974 /* SceneDelegate.swift in Sources */,
 				0E9ED4FA265A89B700E22974 /* MusicListCell.swift in Sources */,
 				0EF30B3327E7706500B27F77 /* ITunesAPI.swift in Sources */,
@@ -380,15 +387,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E79693827E84964005D655E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.5.0;
-			};
-		};
-		0E79693927E84988005D655E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		0EA42C0827E9985300C6786B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -396,7 +395,15 @@
 				minimumVersion = 7.2.0;
 			};
 		};
-		0EDDA92427E848A30095F090 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		0EA42C0B27E998A000C6786B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+		0EA42C0E27E998DD00C6786B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
 			requirement = {
@@ -405,6 +412,24 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EA42C0927E9985300C6786B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EA42C0827E9985300C6786B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		0EA42C0C27E998A000C6786B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EA42C0B27E998A000C6786B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0EA42C0F27E998DD00C6786B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EA42C0E27E998DD00C6786B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E9ED4D9265933FA00E22974 /* Project object */;
 }
